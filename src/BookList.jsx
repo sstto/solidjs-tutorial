@@ -1,5 +1,4 @@
-import {createSignal, For} from "solid-js";
-
+import { For } from "solid-js";
 export function BookList(props) {
     const totalBooks = () => props.books.length;
     return (
@@ -10,8 +9,8 @@ export function BookList(props) {
                     {(book) => {
                         return (
                             <li>
-                                {book.title}{" "}
-                                <span style={{"font-style": "italic"}}>({book.author})</span>
+                                {book.title}
+                                <span style={{ "font-style": "italic" }}> ({book.author})</span>
                             </li>
                         );
                     }}
